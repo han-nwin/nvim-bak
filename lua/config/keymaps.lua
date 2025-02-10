@@ -33,3 +33,6 @@ vim.api.nvim_set_keymap('v', 'aa', [[:<C-u>normal! $a<CR>]], { noremap = true, s
 
 -- Open diagnostic float window
 vim.keymap.set('n', '<leader>xf', vim.diagnostic.open_float, { noremap = true, silent = true })
+
+-- Disable q: to show command history
+vim.keymap.set("n", "q:", "<nop>", { noremap = true, silent = true })
