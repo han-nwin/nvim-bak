@@ -36,3 +36,8 @@ vim.keymap.set('n', '<leader>xf', vim.diagnostic.open_float, { noremap = true, s
 
 -- Disable q: to show command history
 vim.keymap.set("n", "q:", "<nop>", { noremap = true, silent = true })
+
+-- Prevent Control Z to terminate nvim
+vim.api.nvim_set_keymap('n', '<C-z>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-z>', '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-z>', '<NOP>', { noremap = true, silent = true })
