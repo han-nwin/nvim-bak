@@ -7,6 +7,18 @@ return {
       require("rose-pine").setup({
         dark_variant = "main", -- Options: main, moon, dawn
         disable_background = true, -- Make true if you want transparent
+        integrations = {
+          cmp = true,
+          treesitter = true,
+          gitsigns = true,
+          telescope = false,
+          nvimtree = true,
+          lsp_trouble = true,
+          bufferline = true,
+          markdown = true,
+          mason = true,
+          -- Add more integrations if needed
+        },
       })
     end,
   },

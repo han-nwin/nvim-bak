@@ -110,10 +110,13 @@ return {
             lspconfig.volar.setup({
                 filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
                 init_options = {
+                    vue = {
+                        hybridMode = false, -- Ensure Volar handles TypeScript inside .vue files
+                    },
                     typescript = {
                         tsdk = "/home/han/.nvm/versions/node/v20.18.1/lib/node_modules/typescript/lib",
                     }
-                },
+                }
             })
 
             --Config for html
